@@ -2,8 +2,8 @@
 
 clear
 
-job = 1; % 1 = without time shifts, 2 = with time shifts
-penalty = 1; % 1 = with penalty, 0 = without penalty
+job = 2; % 1 = without time shifts, 2 = with time shifts
+penalty = 0; % 1 = with penalty, 0 = without penalty
 noise = 1; repl = 0;
 rng(0); % fix seed
 
@@ -141,13 +141,13 @@ elseif job == 2
 
                 % call algorithms
                 if penalty == 0
-                    found_list{i} = greedy_pairs(yn, y, m, gamma, 0, repl); % cell array, each element = list of detected spike shapes
-                    found_list2{i} = greedy_likely(yn, y, 1, 0, gamma, repl);
-                    found_list3{i} = brute_force_ts(yn, y, m, gamma, 0);
+                    found_list{i} = greedy_pairs(yn, y, m, gamma2, 0, repl); % cell array, each element = list of detected spike shapes
+                    found_list2{i} = greedy_likely(yn, y, ns, 0, gamma2, repl);
+                    found_list3{i} = brute_force_ts(yn, y, m, gamma2, 0);
                 elseif penalty == 1
-                    found_list{i} = greedy_pairs(yn, y, m, gamma, eta, repl); % cell array, each element = list of detected spike shapes
-                    found_list2{i} = greedy_likely(yn, y, 1, eta, gamma, repl);
-                    found_list3{i} = brute_force_ts(yn, y, m, gamma, eta);
+                    found_list{i} = greedy_pairs(yn, y, m, gamma2, eta, repl); % cell array, each element = list of detected spike shapes
+                    found_list2{i} = greedy_likely(yn, y, ns, eta, gamma2, repl);
+                    found_list3{i} = brute_force_ts(yn, y, m, gamma2, eta);
                 end
                
                 l = l + 1; % update counter for waitbar
