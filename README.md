@@ -1,5 +1,5 @@
 # overlappingspikes
-Neural spike sorting algorithms for overlapping spikes in MATLAB. Completed as a senior thesis project, advised by Professor Alexander H. Barnett. 
+Neural spike sorting algorithms for overlapping spikes. Algorithms are all written in MATLAB. Completed as a senior thesis project, advised by Professor Alexander H. Barnett. 
 
 - **maindriver.m:** sorts spikes with and without penalty, with and without time shifts
 - **decision_bound.m:** plots the decision boundaries in the 2-spike case for all algorithms in **notimeshifts**
