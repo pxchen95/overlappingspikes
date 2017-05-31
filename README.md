@@ -5,17 +5,17 @@ Neural spike sorting algorithms for overlapping spikes in MATLAB. Completed as a
 Creation of synthetic spike signals. 
 
 *Functions:*
--**synth.m:** synthesizes spike signals (without noise)
--**gen_firing.m:** generates firing times using a Poisson distribution
+- **synth.m:** synthesizes spike signals (without noise)
+- **gen_firing.m:** generates firing times using a Poisson distribution
   
 *Drivers:*
--**demo_synth.m:** tests synth.m, gen_firing.m
+- **demo_synth.m:** tests synth.m, gen_firing.m
   
 ## detectspikes
 Spike detection via maximum likelihood.
 
 *Drivers:*
--**binarytest.m:** detection of one vs. no spike using linear classifiers
+- **binarytest.m:** detection of one vs. no spike using linear classifiers
   
 ## notimeshifts
 Sorting spikes without time shifts.
