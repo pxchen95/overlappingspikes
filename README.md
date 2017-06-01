@@ -59,4 +59,4 @@ Run algorithms on data from Harris, et al. "Accuracy of tetrode spike separation
 ## other
 - **paulabars.m:** written by A. H. Barnett, creates bar graphs for error fractions with error bars (std, /sqrt(N))
 - **paulabars.m:** version 2 of paulabars.m, changes are only in formatting
-- **terrorbar.m:** written by T. Agus (downloaded from: https://www.mathworks.com/matlabcentral/fileexchange/52367-terrorbar-m--error-bars-with-controlled-widths-post-r2014b) used in paulabars.m to address the issue of non-standard error bar caps in pre-2016b MATLAB versions
+- **terrorbar.m:** written by T. Agus (downloaded from: https://www.mathworks.com/matlabcentral/fileexchange/52367-terrorbar-m--error-bars-with-controlled-widths-post-r2014b), used in paulabars.m to address the issue of non-standard error bar caps in pre-2016b MATLAB versions
